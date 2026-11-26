@@ -1,6 +1,8 @@
 "use client";
-import { BookOpen, Headphones, Pencil, Mic, Lock, CheckCircle2, Hammer, CalendarClock, KeyRound, Flame, Star, Languages, ArrowRight, Target } from "lucide-react";
+import { Award, BookOpen, Headphones, Pencil, Mic, Lock, CheckCircle2, Hammer, CalendarClock, KeyRound, Flame, Star, Languages, ArrowRight, Target } from "lucide-react";
 import { useApp } from "./Providers";
+import Link from "next/link";
+import { useProgress, a2Unlocked } from "@/lib/progress";
 import { FEATURES, LEVELS, type Status } from "@/lib/levels";
 
 const STATUS: Record<Status, { key: string; cls: string; Icon: typeof CheckCircle2 }> = {
@@ -12,6 +14,7 @@ const STATUS: Record<Status, { key: string; cls: string; Icon: typeof CheckCircl
 
 export default function Home() {
   const { t, lang } = useApp();
+  const p = useProgress();
   const skills = [
     { k: "reading", d: "readingD", Icon: BookOpen },
     { k: "listening", d: "listeningD", Icon: Headphones },
@@ -31,24 +34,26 @@ export default function Home() {
           <a href="#roadmap" className="inline-flex items-center gap-2 rounded-2xl bg-amber-400 px-6 py-3 font-extrabold text-teal-950 shadow transition hover:bg-amber-300 active:scale-95">
             {t("start")} <ArrowRight size={18} className="rtl:rotate-180" />
           </a>
-          <span className="inline-flex items-center gap-2 rounded-2xl border border-white/30 px-5 py-3 text-sm font-semibold text-white/90" aria-disabled="true">
-            <Target size={16} /> {t("placement")} <span className="rounded-full bg-white/20 px-2 py-0.5 text-xs">{t("placementSoon")}</span>
-          </span>
+          <Link href="/test/placement" className="inline-flex items-center gap-2 rounded-2xl border border-white/40 px-5 py-3 text-sm font-semibold text-white transition hover:bg-white/10"><Target size={16} /> {t("placement")}</Link>
         </div>
       </section>
 
       <section className="mt-8">
         <h2 className="mb-3 text-xl font-extrabold">{t("yourDay")}</h2>
         <div className="grid grid-cols-3 gap-3">
-          {[{ k: "xp", Icon: Star }, { k: "streak", Icon: Flame }, { k: "words", Icon: BookOpen }].map(({ k, Icon }) => (
+          {[{ k: "xp", Icon: Star, v: p.xp }, { k: "streak", Icon: Flame, v: p.streak }, { k: "words", Icon: BookOpen, v: p.tests }].map(({ k, Icon, v }) => (
             <div key={k} className={card}>
               <Icon className="mb-2 text-amber-500" size={22} />
-              <div className="text-3xl font-extrabold tabular-nums">0</div>
+              <div className="text-3xl font-extrabold tabular-nums">{v}</div>
               <div className="text-sm text-slate-500 dark:text-slate-400">{t(k)}</div>
             </div>
           ))}
         </div>
         <p className="mt-2 text-sm text-slate-500 dark:text-slate-400">{t("guestNote")}</p>
+        <div className={`${card} mt-3`}>
+          <div className="mb-2 font-bold">{t("badgesT")}</div>
+          {p.badges.length === 0 ? <span className="text-sm text-slate-500">{t("noBadges")}</span> : <div className="flex flex-wrap gap-2">{p.badges.map((b) => (<span key={b} className="inline-flex items-center gap-1 rounded-full bg-amber-100 px-3 py-1 text-sm font-bold text-amber-800 dark:bg-amber-400/15 dark:text-amber-300"><Award size={14} /> {t("b_" + b)}</span>))}</div>}
+        </div>
       </section>
 
       <section id="roadmap" className="mt-10 scroll-mt-20">
@@ -59,12 +64,13 @@ export default function Home() {
             <div key={lv.code} className={`${card} ${lv.written ? "" : "opacity-80"}`}>
               <div className="flex items-center justify-between">
                 <span className="grid h-12 w-12 place-items-center rounded-2xl bg-teal-600/10 text-xl font-extrabold text-teal-700 dark:text-teal-300">{lv.code}</span>
-                {i === 0 ? <CheckCircle2 className="text-emerald-500" /> : <Lock className="text-slate-400" size={20} />}
+                {i === 0 || (i === 1 && a2Unlocked(p)) ? <CheckCircle2 className="text-emerald-500" /> : <Lock className="text-slate-400" size={20} />}
               </div>
               <div className="mt-3 font-bold">{lv.written ? `${lv.units} ${t("units")} · ${lv.words} ${lang === "ar" ? "كلمة" : lang === "de" ? "Wörter" : "words"}` : t("notYet")}</div>
               <div className="mt-1 text-sm text-slate-500 dark:text-slate-400">{lv.written ? t("available") : "—"}</div>
               <div className="mt-3 border-t border-black/5 pt-3 text-sm text-slate-600 dark:border-white/10 dark:text-slate-300">
                 <span className="font-semibold">{t("gate")}:</span> {i === 0 ? t("gateA1") : `${t("gateNext")} ${LEVELS[i - 1].code}`}
+                {(i === 1 || i === 2) && (<Link href={i === 1 ? "/test/A1" : "/test/A2"} className="ms-2 font-bold text-teal-700 underline dark:text-teal-300">{i === 1 ? t("openGate") : t("openGate2")}</Link>)}
               </div>
             </div>
           ))}

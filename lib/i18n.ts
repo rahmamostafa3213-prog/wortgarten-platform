@@ -20,8 +20,8 @@ const ar: Dict = {
   yourDay: "يومك",
   xp: "نقاط الخبرة",
   streak: "أيام متتالية",
-  words: "كلمات اتعلمتيها",
-  guestNote: "الأرقام دي صفر لأنك مش مسجلة دخول. بعد التسجيل بيتحفظ تقدمك على حسابك.",
+  words: "اختبارات خلصتيها",
+  guestNote: "الأرقام دي محفوظة على الجهاز ده بس (من غير حساب). بعد ما نربط الحسابات هتتحفظ على حسابك.",
   roadmapTitle: "خريطة المستويات",
   roadmapText: "كل مستوى بيتفتح بعد ما تنجحي في اختبار المستوى اللي قبله. المحتوى المتاح حالياً مكتوب فعلاً، والباقي معلّم بصراحة إنه لسه ما اتكتبش.",
   available: "متاح في التطبيق",
@@ -53,6 +53,7 @@ const ar: Dict = {
   login: "دخول",
   notConfigured: "الحسابات لسه متوقفة: قاعدة البيانات (Supabase) ما اتربطتش. بعد ما تنشئي مشروع Supabase مجاني وتحطي المفتاح العام في الإعدادات، الزرارين دول بيشتغلوا. لحد وقتها مفيش تسجيل دخول حقيقي.",
   back: "رجوع للرئيسية",
+  placementTitle: "اختبار تحديد المستوى", gateTitle: "اختبار بوابة", testIntro: "الأسئلة مأخوذة من كلمات وأفعال الدروس الفعلية. النتيجة تقدير بسيط للمستوى، مش شهادة.", startTest: "ابدأي الاختبار", questionOf: "سؤال", ofWord: "من", nextQ: "التالي", finishQ: "إنهاء", score: "النتيجة", passedT: "نجحتي", failedT: "لسه محتاجة مراجعة", retry: "أعيدي المحاولة", reviewT: "مراجعة الأخطاء", yourAns: "إجابتك", correctAns: "الصح", lockedT: "المستوى مقفول", lockedText: "انجحي في اختبار البوابة بتاع المستوى اللي قبله (70% أو أكتر) عشان يتفتح.", takeGate: "ادخلي اختبار البوابة", placedAt: "مستواك المقدّر", placeA1: "ابدأي من A1", placeA2: "A1 مفتوح وكمان A2", deviceNote: "تقدمك محفوظ على الجهاز ده بس لحد ما تسجلي حساب.", qDe2Ar: "معنى الكلمة بالعربي", qAr2De: "الكلمة بالألماني", qArticle: "اختاري الـ artikel الصح", qVerb: "اختاري تصريف الفعل الصح", badgesT: "الأوسمة", b_first: "أول اختبار", b_a1: "بوابة A1", b_a2: "بوابة A2", b_xp100: "١٠٠ نقطة", b_streak3: "٣ أيام متتالية", noBadges: "لسه مفيش أوسمة", openGate: "اختبار بوابة A1", openGate2: "اختبار بوابة A2", comingB1: "اختبار B1 مش متاح لأن محتوى B1 لسه ما اتكتبش.",
   navLearn: "الدروس", navDict: "القاموس", search: "ابحثي بالألماني أو العربي", all: "الكل", noResults: "مفيش نتيجة", entries: "كلمة", speak: "نطق", sentences: "جمل", dialogsT: "حوارات", verbsT: "تصريف الأفعال", grammarT: "القواعد", unitsT: "وحدات", dictNote: "القاموس مبني من كلمات الدروس الفعلية بس (مش قاموس كامل). النطق بصوت الجهاز (TTS) وبيعتمد على أصوات متصفحك.", noVoice: "جهازك مفيش عليه صوت ألماني.", contentNote: "المحتوى ده هو نفس محتوى تطبيق الأندرويد.", wordsT: "كلمات", infinitive: "المصدر", prev: "السابق", next: "التالي",
 };
 const en: Dict = {
@@ -69,8 +70,8 @@ const en: Dict = {
   yourDay: "Your day",
   xp: "XP",
   streak: "Day streak",
-  words: "Words learned",
-  guestNote: "These numbers are zero because you are not signed in. After signing in, your progress is saved to your account.",
+  words: "Tests completed",
+  guestNote: "These numbers are saved on this device only (no account yet). Once accounts are connected they will be saved to your account.",
   roadmapTitle: "Level roadmap",
   roadmapText: "Each level unlocks after you pass the test of the level before it. Content marked available is really written; the rest is honestly marked as not written yet.",
   available: "Available in the app",
@@ -102,6 +103,7 @@ const en: Dict = {
   login: "Sign in",
   notConfigured: "Accounts are not live yet: the database (Supabase) is not connected. Once a free Supabase project is created and its public key is set, these two buttons work. Until then there is no real sign-in.",
   back: "Back to home",
+  placementTitle: "Placement test", gateTitle: "Gate test", testIntro: "Questions are taken from the real words and verbs in the lessons. The result is a simple estimate of your level, not a certificate.", startTest: "Start the test", questionOf: "Question", ofWord: "of", nextQ: "Next", finishQ: "Finish", score: "Score", passedT: "You passed", failedT: "More review needed", retry: "Try again", reviewT: "Review mistakes", yourAns: "Your answer", correctAns: "Correct", lockedT: "Level locked", lockedText: "Pass the gate test of the previous level (70% or more) to unlock it.", takeGate: "Take the gate test", placedAt: "Your estimated level", placeA1: "Start at A1", placeA2: "A1 is open and A2 too", deviceNote: "Your progress is saved on this device only until you create an account.", qDe2Ar: "What does it mean in Arabic", qAr2De: "The word in German", qArticle: "Choose the correct article", qVerb: "Choose the correct verb form", badgesT: "Badges", b_first: "First test", b_a1: "A1 gate", b_a2: "A2 gate", b_xp100: "100 XP", b_streak3: "3-day streak", noBadges: "No badges yet", openGate: "A1 gate test", openGate2: "A2 gate test", comingB1: "The B1 test is not available because B1 content is not written yet.",
   navLearn: "Lessons", navDict: "Dictionary", search: "Search in German or Arabic", all: "All", noResults: "No results", entries: "entries", speak: "Pronounce", sentences: "Sentences", dialogsT: "Dialogues", verbsT: "Verb conjugation", grammarT: "Grammar", unitsT: "units", dictNote: "The dictionary is built only from the words in the lessons (not a full dictionary). Pronunciation uses your device's speech voice (TTS) and depends on your browser.", noVoice: "Your device has no German voice.", contentNote: "This content is the same as in the Android app.", wordsT: "Words", infinitive: "Infinitive", prev: "Previous", next: "Next",
 };
 const de: Dict = {
@@ -118,8 +120,8 @@ const de: Dict = {
   yourDay: "Dein Tag",
   xp: "XP",
   streak: "Tage in Folge",
-  words: "Gelernte Wörter",
-  guestNote: "Diese Zahlen sind null, weil du nicht angemeldet bist. Nach der Anmeldung wird dein Fortschritt im Konto gespeichert.",
+  words: "Abgeschlossene Tests",
+  guestNote: "Diese Zahlen werden nur auf diesem Gerät gespeichert (noch kein Konto). Sobald Konten verbunden sind, werden sie in deinem Konto gespeichert.",
   roadmapTitle: "Niveau-Fahrplan",
   roadmapText: "Jedes Niveau wird nach dem bestandenen Test des vorherigen freigeschaltet. Als verfügbar markierte Inhalte sind wirklich geschrieben, der Rest ist ehrlich als noch nicht geschrieben markiert.",
   available: "In der App verfügbar",
@@ -151,6 +153,7 @@ const de: Dict = {
   login: "Anmelden",
   notConfigured: "Konten sind noch nicht aktiv: Die Datenbank (Supabase) ist nicht verbunden. Sobald ein kostenloses Supabase-Projekt angelegt und der öffentliche Schlüssel gesetzt ist, funktionieren diese zwei Knöpfe. Bis dahin gibt es keine echte Anmeldung.",
   back: "Zurück zur Startseite",
+  placementTitle: "Einstufungstest", gateTitle: "Schranken-Test", testIntro: "Die Fragen stammen aus den echten Wörtern und Verben der Lektionen. Das Ergebnis ist eine einfache Einschätzung, kein Zertifikat.", startTest: "Test starten", questionOf: "Frage", ofWord: "von", nextQ: "Weiter", finishQ: "Beenden", score: "Ergebnis", passedT: "Bestanden", failedT: "Noch Wiederholung nötig", retry: "Nochmal", reviewT: "Fehler ansehen", yourAns: "Deine Antwort", correctAns: "Richtig", lockedT: "Niveau gesperrt", lockedText: "Bestehe den Schranken-Test des vorherigen Niveaus (70 % oder mehr), um es freizuschalten.", takeGate: "Schranken-Test machen", placedAt: "Dein geschätztes Niveau", placeA1: "Starte bei A1", placeA2: "A1 und A2 sind offen", deviceNote: "Dein Fortschritt wird nur auf diesem Gerät gespeichert, bis du ein Konto erstellst.", qDe2Ar: "Was bedeutet das auf Arabisch", qAr2De: "Das Wort auf Deutsch", qArticle: "Wähle den richtigen Artikel", qVerb: "Wähle die richtige Verbform", badgesT: "Abzeichen", b_first: "Erster Test", b_a1: "A1-Schranke", b_a2: "A2-Schranke", b_xp100: "100 XP", b_streak3: "3 Tage in Folge", noBadges: "Noch keine Abzeichen", openGate: "A1-Schranken-Test", openGate2: "A2-Schranken-Test", comingB1: "Der B1-Test ist nicht verfügbar, weil B1-Inhalte noch nicht geschrieben sind.",
   navLearn: "Lektionen", navDict: "Wörterbuch", search: "Auf Deutsch oder Arabisch suchen", all: "Alle", noResults: "Keine Ergebnisse", entries: "Einträge", speak: "Aussprache", sentences: "Sätze", dialogsT: "Dialoge", verbsT: "Verbkonjugation", grammarT: "Grammatik", unitsT: "Einheiten", dictNote: "Das Wörterbuch besteht nur aus den Wörtern der Lektionen (kein vollständiges Wörterbuch). Die Aussprache nutzt die Sprachausgabe deines Geräts (TTS) und hängt vom Browser ab.", noVoice: "Dein Gerät hat keine deutsche Stimme.", contentNote: "Dieser Inhalt ist derselbe wie in der Android-App.", wordsT: "Wörter", infinitive: "Infinitiv", prev: "Zurück", next: "Weiter",
 };
 export const DICTS: Record<Lang, Dict> = { ar, en, de };

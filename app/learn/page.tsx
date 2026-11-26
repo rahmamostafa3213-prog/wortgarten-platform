@@ -2,10 +2,14 @@
 import Link from "next/link";
 import Header from "@/components/Header";
 import { useApp } from "@/components/Providers";
+import UnitIcon from "@/components/UnitIcon";
+import { useProgress, a2Unlocked } from "@/lib/progress";
+import { Lock } from "lucide-react";
 import { content } from "@/lib/content";
 
 export default function Learn() {
   const { t } = useApp();
+  const p = useProgress();
   return (
     <>
       <Header />
@@ -14,14 +18,14 @@ export default function Learn() {
         <p className="mt-1 text-sm text-slate-600 dark:text-slate-300">{t("contentNote")}</p>
         {["A1", "A2"].map((lv) => (
           <section key={lv} className="mt-6">
-            <h2 className="mb-2 text-xl font-extrabold">{lv}</h2>
+            <h2 className="mb-2 flex items-center gap-2 text-xl font-extrabold">{lv}{lv === "A2" && !a2Unlocked(p) && <span className="inline-flex items-center gap-1 rounded-full bg-slate-100 px-3 py-0.5 text-sm font-bold dark:bg-white/10"><Lock size={14} /> {t("lockedT")}</span>}</h2>
             <div className="grid gap-3 sm:grid-cols-2">
               {content.units.filter((u) => u.level === lv).map((u) => (
                 <Link key={u.id + lv} href={`/learn/${u.id}`} className="flex items-center gap-3 rounded-2xl bg-white p-4 shadow-sm transition hover:shadow-md dark:bg-[#172a28] dark:ring-1 dark:ring-white/10">
-                  <span className="text-3xl" aria-hidden>{u.icon}</span>
+                  <span className="grid h-12 w-12 shrink-0 place-items-center rounded-2xl bg-teal-600/10 text-teal-700 dark:text-teal-300"><UnitIcon k={u.icon} /></span>
                   <span className="min-w-0">
                     <span className="block font-bold">{u.title_ar}</span>
-                    <span className="text-sm text-slate-500">{u.words.length} {t("wordsT")} · {u.sentences.length} {t("sentences")}</span>
+                    <span className="text-sm text-slate-500">{u.words.length} {t("entries")} · {u.sentences.length} {t("sentences")}</span>
                   </span>
                 </Link>
               ))}

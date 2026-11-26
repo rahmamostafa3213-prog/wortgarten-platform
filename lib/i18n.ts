@@ -53,6 +53,7 @@ const ar: Dict = {
   login: "دخول",
   notConfigured: "الحسابات لسه متوقفة: قاعدة البيانات (Supabase) ما اتربطتش. بعد ما تنشئي مشروع Supabase مجاني وتحطي المفتاح العام في الإعدادات، الزرارين دول بيشتغلوا. لحد وقتها مفيش تسجيل دخول حقيقي.",
   back: "رجوع للرئيسية",
+  navLearn: "الدروس", navDict: "القاموس", search: "ابحثي بالألماني أو العربي", all: "الكل", noResults: "مفيش نتيجة", entries: "كلمة", speak: "نطق", sentences: "جمل", dialogsT: "حوارات", verbsT: "تصريف الأفعال", grammarT: "القواعد", unitsT: "وحدات", dictNote: "القاموس مبني من كلمات الدروس الفعلية بس (مش قاموس كامل). النطق بصوت الجهاز (TTS) وبيعتمد على أصوات متصفحك.", noVoice: "جهازك مفيش عليه صوت ألماني.", contentNote: "المحتوى ده هو نفس محتوى تطبيق الأندرويد.", wordsT: "كلمات", infinitive: "المصدر", prev: "السابق", next: "التالي",
 };
 const en: Dict = {
   brand: "Wortgarten",
@@ -101,6 +102,7 @@ const en: Dict = {
   login: "Sign in",
   notConfigured: "Accounts are not live yet: the database (Supabase) is not connected. Once a free Supabase project is created and its public key is set, these two buttons work. Until then there is no real sign-in.",
   back: "Back to home",
+  navLearn: "Lessons", navDict: "Dictionary", search: "Search in German or Arabic", all: "All", noResults: "No results", entries: "entries", speak: "Pronounce", sentences: "Sentences", dialogsT: "Dialogues", verbsT: "Verb conjugation", grammarT: "Grammar", unitsT: "units", dictNote: "The dictionary is built only from the words in the lessons (not a full dictionary). Pronunciation uses your device's speech voice (TTS) and depends on your browser.", noVoice: "Your device has no German voice.", contentNote: "This content is the same as in the Android app.", wordsT: "Words", infinitive: "Infinitive", prev: "Previous", next: "Next",
 };
 const de: Dict = {
   brand: "Wortgarten",
@@ -149,5 +151,6 @@ const de: Dict = {
   login: "Anmelden",
   notConfigured: "Konten sind noch nicht aktiv: Die Datenbank (Supabase) ist nicht verbunden. Sobald ein kostenloses Supabase-Projekt angelegt und der öffentliche Schlüssel gesetzt ist, funktionieren diese zwei Knöpfe. Bis dahin gibt es keine echte Anmeldung.",
   back: "Zurück zur Startseite",
+  navLearn: "Lektionen", navDict: "Wörterbuch", search: "Auf Deutsch oder Arabisch suchen", all: "Alle", noResults: "Keine Ergebnisse", entries: "Einträge", speak: "Aussprache", sentences: "Sätze", dialogsT: "Dialoge", verbsT: "Verbkonjugation", grammarT: "Grammatik", unitsT: "Einheiten", dictNote: "Das Wörterbuch besteht nur aus den Wörtern der Lektionen (kein vollständiges Wörterbuch). Die Aussprache nutzt die Sprachausgabe deines Geräts (TTS) und hängt vom Browser ab.", noVoice: "Dein Gerät hat keine deutsche Stimme.", contentNote: "Dieser Inhalt ist derselbe wie in der Android-App.", wordsT: "Wörter", infinitive: "Infinitiv", prev: "Zurück", next: "Weiter",
 };
 export const DICTS: Record<Lang, Dict> = { ar, en, de };

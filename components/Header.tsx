@@ -13,6 +13,10 @@ export default function Header() {
           <span className="grid h-9 w-9 place-items-center rounded-xl bg-teal-600 text-white shadow-sm"><Sprout size={20} /></span>
           <span className="hidden text-lg tracking-tight min-[380px]:inline">{t("brand")}</span>
         </Link>
+        <nav className="ms-2 flex items-center gap-1 text-sm font-semibold">
+          <Link href="/learn" className="rounded-lg px-2 py-1.5 hover:bg-teal-600/10">{t("navLearn")}</Link>
+          <Link href="/dictionary" className="rounded-lg px-2 py-1.5 hover:bg-teal-600/10">{t("navDict")}</Link>
+        </nav>
         <div className="ms-auto flex items-center gap-2">
           <label className="flex items-center gap-1 rounded-xl border border-black/10 bg-white px-2 py-1.5 text-sm dark:border-white/15 dark:bg-white/5">
             <Globe size={16} aria-hidden />

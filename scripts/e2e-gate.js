@@ -1,4 +1,5 @@
 /* eslint-disable */
+/* eslint-disable */
 const puppeteer=require('puppeteer-core');const fs=require('fs');
 const c=JSON.parse(fs.readFileSync(process.env.HOME+'/wortgarten-web/data/content.json'));
 const de2ar={},ar2de={};for(const u of c.units)for(const w of u.words){de2ar[w.de.replace(/^(der|die|das) /,'')]=w.ar;de2ar[w.de]=w.ar;ar2de[w.ar]=w.de}

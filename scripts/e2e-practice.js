@@ -1,4 +1,5 @@
 /* eslint-disable */
+/* eslint-disable */
 const puppeteer=require('puppeteer-core');
 (async()=>{
  const b=await puppeteer.launch({executablePath:'/usr/bin/google-chrome',headless:'new',args:['--no-sandbox']});

@@ -4,6 +4,7 @@ Free, Arabic-first German learning, A1 to C2. No paid tiers. Nothing is marked "
 
 ## Phases
 1. Structure, database schema, home screen, login shell, PWA (done).
+   Also done without accounts: A1/A2 content import, dictionary, lessons, tests and gates, practice drills (phases 2 to 4), 26 own videos (phase 5), AI tutor client (phase 6). Progress is local to the device until Supabase is connected.
 2. Import real A1/A2 content (28 units, 359 words, dialogs, verbs) from the Android app into the database, plus the German-Arabic dictionary built from it.
 3. Placement test and level-gate tests, with progress, XP, streak and badges saved per account.
 4. Grammar library (Artikel, Kasus, Verben, Perfekt, Konjunktiv, Passiv) with exercises.

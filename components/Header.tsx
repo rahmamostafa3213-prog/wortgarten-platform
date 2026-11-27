@@ -17,6 +17,7 @@ export default function Header() {
           <Link href="/learn" className="rounded-lg px-1.5 py-1.5 hover:bg-teal-600/10 sm:px-2">{t("navLearn")}</Link>
           <Link href="/practice" className="rounded-lg px-1.5 py-1.5 hover:bg-teal-600/10 sm:px-2">{t("navPractice")}</Link>
           <Link href="/videos" className="rounded-lg px-1.5 py-1.5 hover:bg-teal-600/10 sm:px-2">{t("navVideos")}</Link>
+          <Link href="/tutor" className="rounded-lg px-1.5 py-1.5 hover:bg-teal-600/10 sm:px-2">{t("navTutor")}</Link>
           <Link href="/dictionary" className="rounded-lg px-1.5 py-1.5 hover:bg-teal-600/10 sm:px-2">{t("navDict")}</Link>
         </nav>
         <div className="ms-auto flex items-center gap-2">

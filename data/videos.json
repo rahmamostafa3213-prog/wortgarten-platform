@@ -1,0 +1,582 @@
+[
+ {
+  "id": 0,
+  "file": "/videos/vl0.mp4",
+  "poster": "/videos/vl0.jpg",
+  "level": "A1",
+  "source_kind": "own",
+  "title": {
+   "ar": "الأبجدية والأصوات",
+   "en": null,
+   "de": null
+  },
+  "desc": {
+   "ar": "أسماء الحروف والحروف الزيادة بنطق صح",
+   "en": null,
+   "de": null
+  },
+  "series": "basics",
+  "seconds": 81,
+  "captions": []
+ },
+ {
+  "id": 1,
+  "file": "/videos/vl1.mp4",
+  "poster": "/videos/vl1.jpg",
+  "level": "A1",
+  "source_kind": "own",
+  "title": {
+   "ar": "الضمائر وفعل sein",
+   "en": null,
+   "de": null
+  },
+  "desc": {
+   "ar": "أهم فعل في اللغة مع كل الضمائر",
+   "en": null,
+   "de": null
+  },
+  "series": "basics",
+  "seconds": 71,
+  "captions": []
+ },
+ {
+  "id": 2,
+  "file": "/videos/vl2.mp4",
+  "poster": "/videos/vl2.jpg",
+  "level": "A1",
+  "source_kind": "own",
+  "title": {
+   "ar": "التحيات والتعارف",
+   "en": null,
+   "de": null
+  },
+  "desc": {
+   "ar": "أول محادثة ليكي بالألماني",
+   "en": null,
+   "de": null
+  },
+  "series": "basics",
+  "seconds": 74,
+  "captions": []
+ },
+ {
+  "id": 3,
+  "file": "/videos/vl3.mp4",
+  "poster": "/videos/vl3.jpg",
+  "level": "A1",
+  "source_kind": "own",
+  "title": {
+   "ar": "der die das",
+   "en": null,
+   "de": null
+  },
+  "desc": {
+   "ar": "إزاي تعرفي جنس الكلمة وتحفظيه",
+   "en": null,
+   "de": null
+  },
+  "series": "basics",
+  "seconds": 62,
+  "captions": []
+ },
+ {
+  "id": 4,
+  "file": "/videos/vl4.mp4",
+  "poster": "/videos/vl4.jpg",
+  "level": "A1",
+  "source_kind": "own",
+  "title": {
+   "ar": "الأرقام والساعة",
+   "en": null,
+   "de": null
+  },
+  "desc": {
+   "ar": "عدّي وسألي عن الوقت بثقة",
+   "en": null,
+   "de": null
+  },
+  "series": "basics",
+  "seconds": 61,
+  "captions": []
+ },
+ {
+  "id": 5,
+  "file": "/videos/vl5.mp4",
+  "poster": "/videos/vl5.jpg",
+  "level": "A1",
+  "source_kind": "own",
+  "title": {
+   "ar": "ترتيب الجملة",
+   "en": null,
+   "de": null
+  },
+  "desc": {
+   "ar": "القاعدة الذهبية: الفعل تاني عنصر",
+   "en": null,
+   "de": null
+  },
+  "series": "basics",
+  "seconds": 73,
+  "captions": []
+ },
+ {
+  "id": 6,
+  "file": "/videos/vl6.mp4",
+  "poster": "/videos/vl6.jpg",
+  "level": "A1",
+  "source_kind": "own",
+  "title": {
+   "ar": "حروف العلة: A E I O U",
+   "en": "Vowels: A E I O U",
+   "de": "Vokale: A E I O U"
+  },
+  "desc": {
+   "ar": "نطق الحروف المتحركة صح، قصيرة وطويلة",
+   "en": "Short and long vowels, said correctly",
+   "de": "Kurze und lange Vokale richtig sprechen"
+  },
+  "series": "pronunciation",
+  "seconds": 64,
+  "captions": [
+   "de",
+   "ar"
+  ]
+ },
+ {
+  "id": 7,
+  "file": "/videos/vl7.mp4",
+  "poster": "/videos/vl7.jpg",
+  "level": "A1",
+  "source_kind": "own",
+  "title": {
+   "ar": "طويل ولا قصير؟",
+   "en": "Long or short?",
+   "de": "Lang oder kurz?"
+  },
+  "desc": {
+   "ar": "القاعدة اللي بتغير المعنى: Bahn و Bann",
+   "en": "The rule that changes the meaning: Bahn and Bann",
+   "de": "Die Regel, die die Bedeutung ändert: Bahn und Bann"
+  },
+  "series": "pronunciation",
+  "seconds": 57,
+  "captions": [
+   "de",
+   "ar"
+  ]
+ },
+ {
+  "id": 8,
+  "file": "/videos/vl8.mp4",
+  "poster": "/videos/vl8.jpg",
+  "level": "A1",
+  "source_kind": "own",
+  "title": {
+   "ar": "ä ö ü: الحروف الزيادة",
+   "en": "ä ö ü: the umlauts",
+   "de": "ä ö ü: die Umlaute"
+  },
+  "desc": {
+   "ar": "ازاي تنطقي Ä Ö Ü بشفايفك",
+   "en": "How to say Ä Ö Ü with your lips",
+   "de": "So sprichst du Ä Ö Ü mit den Lippen"
+  },
+  "series": "pronunciation",
+  "seconds": 59,
+  "captions": [
+   "de",
+   "ar"
+  ]
+ },
+ {
+  "id": 9,
+  "file": "/videos/vl9.mp4",
+  "poster": "/videos/vl9.jpg",
+  "level": "A1",
+  "source_kind": "own",
+  "title": {
+   "ar": "الحروف المركبة: ei ie eu au",
+   "en": "Double vowels: ei ie eu au",
+   "de": "Doppelvokale: ei ie eu au"
+  },
+  "desc": {
+   "ar": "أربع أصوات لازم تتفرق بينهم",
+   "en": "Four sounds you must tell apart",
+   "de": "Vier Laute, die du unterscheiden musst"
+  },
+  "series": "pronunciation",
+  "seconds": 53,
+  "captions": [
+   "de",
+   "ar"
+  ]
+ },
+ {
+  "id": 10,
+  "file": "/videos/vl10.mp4",
+  "poster": "/videos/vl10.jpg",
+  "level": "A1",
+  "source_kind": "own",
+  "title": {
+   "ar": "ch: صوتين مختلفين",
+   "en": "ch: two different sounds",
+   "de": "ch: zwei verschiedene Laute"
+  },
+  "desc": {
+   "ar": "ich-Laut و ach-Laut وازاي تفرقي",
+   "en": "The ich sound and the ach sound",
+   "de": "Der ich-Laut und der ach-Laut"
+  },
+  "series": "pronunciation",
+  "seconds": 62,
+  "captions": [
+   "de",
+   "ar"
+  ]
+ },
+ {
+  "id": 11,
+  "file": "/videos/vl11.mp4",
+  "poster": "/videos/vl11.jpg",
+  "level": "A1",
+  "source_kind": "own",
+  "title": {
+   "ar": "sch و sp و st",
+   "en": "sch, sp and st",
+   "de": "sch, sp und st"
+  },
+  "desc": {
+   "ar": "ازاي بتتنطق شين في الألماني",
+   "en": "How German makes the sh sound",
+   "de": "Wie das Deutsche den Sch-Laut bildet"
+  },
+  "series": "pronunciation",
+  "seconds": 44,
+  "captions": [
+   "de",
+   "ar"
+  ]
+ },
+ {
+  "id": 12,
+  "file": "/videos/vl12.mp4",
+  "poster": "/videos/vl12.jpg",
+  "level": "A1",
+  "source_kind": "own",
+  "title": {
+   "ar": "حرف R",
+   "en": "The letter R",
+   "de": "Der Buchstabe R"
+  },
+  "desc": {
+   "ar": "ازاي تنطقي الراء من الحلق",
+   "en": "How to say R from the throat",
+   "de": "So sprichst du R im Hals"
+  },
+  "series": "pronunciation",
+  "seconds": 54,
+  "captions": [
+   "de",
+   "ar"
+  ]
+ },
+ {
+  "id": 13,
+  "file": "/videos/vl13.mp4",
+  "poster": "/videos/vl13.jpg",
+  "level": "A1",
+  "source_kind": "own",
+  "title": {
+   "ar": "S و Z و ß",
+   "en": "S, Z and ß",
+   "de": "S, Z und ß"
+  },
+  "desc": {
+   "ar": "ثلاث أشكال لحرف السين",
+   "en": "Three faces of the S sound",
+   "de": "Drei Gesichter des S-Lauts"
+  },
+  "series": "pronunciation",
+  "seconds": 47,
+  "captions": [
+   "de",
+   "ar"
+  ]
+ },
+ {
+  "id": 14,
+  "file": "/videos/vl14.mp4",
+  "poster": "/videos/vl14.jpg",
+  "level": "A1",
+  "source_kind": "own",
+  "title": {
+   "ar": "V و W و F و J",
+   "en": "V, W, F and J",
+   "de": "V, W, F und J"
+  },
+  "desc": {
+   "ar": "حروف شكلها يخدع",
+   "en": "Letters that look like something else",
+   "de": "Buchstaben, die täuschen"
+  },
+  "series": "pronunciation",
+  "seconds": 53,
+  "captions": [
+   "de",
+   "ar"
+  ]
+ },
+ {
+  "id": 15,
+  "file": "/videos/vl15.mp4",
+  "poster": "/videos/vl15.jpg",
+  "level": "A1",
+  "source_kind": "own",
+  "title": {
+   "ar": "G و K و Q و X",
+   "en": "G, K, Q and X",
+   "de": "G, K, Q und X"
+  },
+  "desc": {
+   "ar": "نطق حروف الجيم والكاف",
+   "en": "The hard G and the other stops",
+   "de": "Das harte G und andere Laute"
+  },
+  "series": "pronunciation",
+  "seconds": 42,
+  "captions": [
+   "de",
+   "ar"
+  ]
+ },
+ {
+  "id": 16,
+  "file": "/videos/vl16.mp4",
+  "poster": "/videos/vl16.jpg",
+  "level": "A1",
+  "source_kind": "own",
+  "title": {
+   "ar": "حرف H",
+   "en": "The letter H",
+   "de": "Der Buchstabe H"
+  },
+  "desc": {
+   "ar": "H في الأول وH الصامتة",
+   "en": "H at the start and the silent H",
+   "de": "H am Anfang und das stumme H"
+  },
+  "series": "pronunciation",
+  "seconds": 44,
+  "captions": [
+   "de",
+   "ar"
+  ]
+ },
+ {
+  "id": 17,
+  "file": "/videos/vl17.mp4",
+  "poster": "/videos/vl17.jpg",
+  "level": "A1",
+  "source_kind": "own",
+  "title": {
+   "ar": "آخر الكلمة: b d g",
+   "en": "Word endings: b d g",
+   "de": "Wortenden: b d g"
+  },
+  "desc": {
+   "ar": "ليه Hund بتتنطق هونت",
+   "en": "Why Hund sounds like Hunt",
+   "de": "Warum Hund wie Hunt klingt"
+  },
+  "series": "pronunciation",
+  "seconds": 42,
+  "captions": [
+   "de",
+   "ar"
+  ]
+ },
+ {
+  "id": 18,
+  "file": "/videos/vl18.mp4",
+  "poster": "/videos/vl18.jpg",
+  "level": "A1",
+  "source_kind": "own",
+  "title": {
+   "ar": "النهايات: e و en و er و el",
+   "en": "Endings: e, en, er, el",
+   "de": "Endungen: e, en, er, el"
+  },
+  "desc": {
+   "ar": "الحرف e الضعيف في آخر الكلمة",
+   "en": "The weak e at the end of words",
+   "de": "Das schwache e am Wortende"
+  },
+  "series": "pronunciation",
+  "seconds": 49,
+  "captions": [
+   "de",
+   "ar"
+  ]
+ },
+ {
+  "id": 19,
+  "file": "/videos/vl19.mp4",
+  "poster": "/videos/vl19.jpg",
+  "level": "A1",
+  "source_kind": "own",
+  "title": {
+   "ar": "مجموعات الحروف الصعبة",
+   "en": "Tricky letter groups",
+   "de": "Schwierige Buchstabengruppen"
+  },
+  "desc": {
+   "ar": "pf و ng و nk و tsch و chs",
+   "en": "pf, ng, nk, tsch and chs",
+   "de": "pf, ng, nk, tsch und chs"
+  },
+  "series": "pronunciation",
+  "seconds": 48,
+  "captions": [
+   "de",
+   "ar"
+  ]
+ },
+ {
+  "id": 20,
+  "file": "/videos/vl20.mp4",
+  "poster": "/videos/vl20.jpg",
+  "level": "A1",
+  "source_kind": "own",
+  "title": {
+   "ar": "النبرة في الكلمة",
+   "en": "Word stress",
+   "de": "Wortakzent"
+  },
+  "desc": {
+   "ar": "أنهي مقطع بنقوله بقوة",
+   "en": "Which syllable is stressed",
+   "de": "Welche Silbe betont wird"
+  },
+  "series": "pronunciation",
+  "seconds": 52,
+  "captions": [
+   "de",
+   "ar"
+  ]
+ },
+ {
+  "id": 21,
+  "file": "/videos/vl21.mp4",
+  "poster": "/videos/vl21.jpg",
+  "level": "A1",
+  "source_kind": "own",
+  "title": {
+   "ar": "موسيقى الجملة",
+   "en": "Sentence melody",
+   "de": "Satzmelodie"
+  },
+  "desc": {
+   "ar": "الصوت بيطلع ويقع إمتى",
+   "en": "When the voice goes up and down",
+   "de": "Wann die Stimme steigt und fällt"
+  },
+  "series": "pronunciation",
+  "seconds": 55,
+  "captions": [
+   "de",
+   "ar"
+  ]
+ },
+ {
+  "id": 22,
+  "file": "/videos/vl22.mp4",
+  "poster": "/videos/vl22.jpg",
+  "level": "A1",
+  "source_kind": "own",
+  "title": {
+   "ar": "كلمات أجنبية في الألماني",
+   "en": "Foreign words in German",
+   "de": "Fremdwörter im Deutschen"
+  },
+  "desc": {
+   "ar": "tion و ieren و ität وChef",
+   "en": "tion, ieren, ität and Chef",
+   "de": "tion, ieren, ität und Chef"
+  },
+  "series": "pronunciation",
+  "seconds": 49,
+  "captions": [
+   "de",
+   "ar"
+  ]
+ },
+ {
+  "id": 23,
+  "file": "/videos/vl23.mp4",
+  "poster": "/videos/vl23.jpg",
+  "level": "A1",
+  "source_kind": "own",
+  "title": {
+   "ar": "الكلمات الطويلة",
+   "en": "Long compound words",
+   "de": "Lange zusammengesetzte Wörter"
+  },
+  "desc": {
+   "ar": "قسمي الكلمة لمقاطع",
+   "en": "Split the word into syllables",
+   "de": "Teile das Wort in Silben"
+  },
+  "series": "pronunciation",
+  "seconds": 49,
+  "captions": [
+   "de",
+   "ar"
+  ]
+ },
+ {
+  "id": 24,
+  "file": "/videos/vl24.mp4",
+  "poster": "/videos/vl24.jpg",
+  "level": "A1",
+  "source_kind": "own",
+  "title": {
+   "ar": "نطق الأرقام",
+   "en": "Pronouncing numbers",
+   "de": "Zahlen aussprechen"
+  },
+  "desc": {
+   "ar": "الأرقام اللي بتتلخبط",
+   "en": "The numbers that get confused",
+   "de": "Die Zahlen, die man verwechselt"
+  },
+  "series": "pronunciation",
+  "seconds": 47,
+  "captions": [
+   "de",
+   "ar"
+  ]
+ },
+ {
+  "id": 25,
+  "file": "/videos/vl25.mp4",
+  "poster": "/videos/vl25.jpg",
+  "level": "A1",
+  "source_kind": "own",
+  "title": {
+   "ar": "أخطاء العرب الشائعة",
+   "en": "Common mistakes for Arabic speakers",
+   "de": "Häufige Fehler für Arabischsprecher"
+  },
+  "desc": {
+   "ar": "أهم الأخطاء وإزاي تتجنبيها",
+   "en": "The main mistakes and how to avoid them",
+   "de": "Die wichtigsten Fehler und wie du sie vermeidest"
+  },
+  "series": "pronunciation",
+  "seconds": 69,
+  "captions": [
+   "de",
+   "ar"
+  ]
+ }
+]

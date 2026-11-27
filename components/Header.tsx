@@ -16,6 +16,7 @@ export default function Header() {
         <nav className="flex items-center text-sm font-semibold max-sm:text-[13px]">
           <Link href="/learn" className="rounded-lg px-1.5 py-1.5 hover:bg-teal-600/10 sm:px-2">{t("navLearn")}</Link>
           <Link href="/practice" className="rounded-lg px-1.5 py-1.5 hover:bg-teal-600/10 sm:px-2">{t("navPractice")}</Link>
+          <Link href="/videos" className="rounded-lg px-1.5 py-1.5 hover:bg-teal-600/10 sm:px-2">{t("navVideos")}</Link>
           <Link href="/dictionary" className="rounded-lg px-1.5 py-1.5 hover:bg-teal-600/10 sm:px-2">{t("navDict")}</Link>
         </nav>
         <div className="ms-auto flex items-center gap-2">

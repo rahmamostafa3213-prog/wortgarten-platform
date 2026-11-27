@@ -14,3 +14,8 @@ Run `supabase/schema.sql` in the Supabase SQL editor. It creates tables, roles a
 To make someone an admin, change `profiles.role` from the SQL editor (the app cannot do it).
 
 See `docs/PLAN.md` for phases, limits and costs.
+
+## Live site (GitHub Pages)
+https://rahmamostafa3213-prog.github.io/wortgarten-platform/
+
+The site is a static export. Redeploy with `GH_TOKEN=... ./scripts/deploy-pages.sh`. Accounts are not live yet, and progress is stored on the device.

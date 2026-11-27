@@ -1,0 +1,7 @@
+:HL["/wortgarten-platform/_next/static/chunks/3qxyx_2f3xaeg.css","style"]
+:HL["/wortgarten-platform/_next/static/media/07c7676b89ed2778-s.p.2bn3s6zvc0dyp.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/wortgarten-platform/_next/static/media/2537dffe910bb2e4-s.p.28efgb-r-zxeb.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+3:[["children",{"s":"__PAGE__","h":160}]]
+2:[["children",{"s":{"n":"kind","t":"d","k":"perfekt","s":[]},"h":96,"c":"$Q3"}]]
+1:[["children",{"s":"practice","h":96,"c":"$Q2"}]]
+0:{"b":"6vMtYnQkth-grDcCs9xQo","t":{"t":{"s":"","h":80,"c":"$Q1"}}}

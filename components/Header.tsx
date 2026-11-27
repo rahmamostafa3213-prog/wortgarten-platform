@@ -8,20 +8,21 @@ export default function Header() {
   const { lang, setLang, t, dark, toggleDark } = useApp();
   return (
     <header className="sticky top-0 z-20 border-b border-black/5 bg-white/80 backdrop-blur dark:border-white/10 dark:bg-[#0e1a19]/80">
-      <div className="mx-auto flex max-w-6xl items-center gap-3 px-4 py-3">
+      <div className="mx-auto flex max-w-6xl flex-wrap items-center gap-2 px-3 py-3 sm:gap-3 sm:px-4">
         <Link href="/" className="flex items-center gap-2 font-extrabold text-teal-700 dark:text-teal-300">
           <span className="grid h-9 w-9 place-items-center rounded-xl bg-teal-600 text-white shadow-sm"><Sprout size={20} /></span>
-          <span className="hidden text-lg tracking-tight min-[380px]:inline">{t("brand")}</span>
+          <span className="hidden text-lg tracking-tight min-[520px]:inline">{t("brand")}</span>
         </Link>
-        <nav className="ms-2 flex items-center gap-1 text-sm font-semibold">
-          <Link href="/learn" className="rounded-lg px-2 py-1.5 hover:bg-teal-600/10">{t("navLearn")}</Link>
-          <Link href="/dictionary" className="rounded-lg px-2 py-1.5 hover:bg-teal-600/10">{t("navDict")}</Link>
+        <nav className="flex items-center text-sm font-semibold max-sm:text-[13px]">
+          <Link href="/learn" className="rounded-lg px-1.5 py-1.5 hover:bg-teal-600/10 sm:px-2">{t("navLearn")}</Link>
+          <Link href="/practice" className="rounded-lg px-1.5 py-1.5 hover:bg-teal-600/10 sm:px-2">{t("navPractice")}</Link>
+          <Link href="/dictionary" className="rounded-lg px-1.5 py-1.5 hover:bg-teal-600/10 sm:px-2">{t("navDict")}</Link>
         </nav>
         <div className="ms-auto flex items-center gap-2">
           <label className="flex items-center gap-1 rounded-xl border border-black/10 bg-white px-2 py-1.5 text-sm dark:border-white/15 dark:bg-white/5">
-            <Globe size={16} aria-hidden />
+            <Globe size={16} aria-hidden className="hidden sm:block" />
             <span className="sr-only">{t("language")}</span>
-            <select value={lang} onChange={(e) => setLang(e.target.value as typeof lang)} className="w-20 bg-transparent outline-none sm:w-auto">
+            <select value={lang} onChange={(e) => setLang(e.target.value as typeof lang)} className="w-16 bg-transparent outline-none sm:w-auto">
               {LANGS.map((l) => (<option key={l.code} value={l.code} className="text-black">{l.label}</option>))}
             </select>
           </label>

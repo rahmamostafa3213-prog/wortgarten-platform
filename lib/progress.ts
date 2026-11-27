@@ -34,6 +34,24 @@ export function recordTest(kind: "placement" | "A1" | "A2", correct: number, tot
   save(p);
   return { p, newBadges };
 }
+/** Record a finished practice drill (no pass mark, smaller XP than tests). */
+export function recordPractice(correct: number): { p: Progress; newBadges: string[] } {
+  const p = load();
+  p.xp += correct * 2;
+  const today = day();
+  if (p.lastDay !== today) {
+    const y = new Date(); y.setDate(y.getDate() - 1);
+    p.streak = p.lastDay === day(y) ? p.streak + 1 : 1;
+    p.lastDay = today;
+  }
+  const have = new Set(p.badges);
+  if (p.xp >= 100) have.add("xp100");
+  if (p.streak >= 3) have.add("streak3");
+  const newBadges = [...have].filter((b) => !p.badges.includes(b));
+  p.badges = [...have];
+  save(p);
+  return { p, newBadges };
+}
 export const a2Unlocked = (p: Progress) => p.gates.A1 || p.placed === "A2";
 
 export function useProgress(): Progress {

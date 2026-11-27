@@ -9,7 +9,6 @@ const latin = Inter({ subsets: ["latin"], variable: "--font-latin", display: "sw
 export const metadata: Metadata = {
   title: "Wortgarten",
   description: "Free Arabic-first German learning, A1 to C2",
-  manifest: "/manifest.webmanifest",
 };
 export const viewport: Viewport = { themeColor: "#0f9d8a" };
 

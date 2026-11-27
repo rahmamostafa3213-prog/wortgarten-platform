@@ -3,6 +3,7 @@ import { useRef, useState } from "react";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { useApp } from "./Providers";
+import { asset } from "@/lib/base";
 import { pick, type VideoItem } from "@/lib/videos";
 
 const SPEEDS = [0.75, 1, 1.25, 1.5];
@@ -22,9 +23,9 @@ export default function VideoPlayer({ v }: { v: VideoItem }) {
       <Link href="/videos" className="mb-3 inline-flex items-center gap-1 text-sm text-teal-700 dark:text-teal-300"><ArrowRight size={16} className="ltr:rotate-180" /> {t("navVideos")}</Link>
       <h1 className="text-xl font-extrabold" dir="auto">{pick(v.title, lang)}</h1>
       <p className="mt-1 text-sm text-slate-600 dark:text-slate-300" dir="auto">{pick(v.desc, lang)}</p>
-      <video ref={ref} controls playsInline preload="metadata" poster={v.poster} src={v.file} onLoadedMetadata={() => { setSpeed(rate); setCaption(cap); }} className="mt-4 w-full rounded-2xl bg-teal-900" crossOrigin="anonymous">
-        {v.captions.includes("ar") && <track kind="captions" srcLang="ar" label="العربية" src={v.file.replace(".mp4", ".ar.vtt")} default={cap === "ar"} />}
-        {v.captions.includes("de") && <track kind="captions" srcLang="de" label="Deutsch" src={v.file.replace(".mp4", ".de.vtt")} />}
+      <video ref={ref} controls playsInline preload="metadata" poster={asset(v.poster)} src={asset(v.file)} onLoadedMetadata={() => { setSpeed(rate); setCaption(cap); }} className="mt-4 w-full rounded-2xl bg-teal-900" crossOrigin="anonymous">
+        {v.captions.includes("ar") && <track kind="captions" srcLang="ar" label="العربية" src={asset(v.file.replace(".mp4", ".ar.vtt"))} default={cap === "ar"} />}
+        {v.captions.includes("de") && <track kind="captions" srcLang="de" label="Deutsch" src={asset(v.file.replace(".mp4", ".de.vtt"))} />}
       </video>
       <div className="mt-3 flex flex-wrap items-center gap-2">
         <span className="text-sm font-semibold">{t("speed")}</span>

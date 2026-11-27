@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Play, Captions } from "lucide-react";
 import Header from "@/components/Header";
 import { useApp } from "@/components/Providers";
+import { asset } from "@/lib/base";
 import { videos, pick } from "@/lib/videos";
 
 export default function Videos() {
@@ -21,7 +22,7 @@ export default function Videos() {
                 <Link key={v.id} href={`/videos/${v.id}`} className="group overflow-hidden rounded-2xl bg-white shadow-sm transition hover:shadow-md dark:bg-[#172a28] dark:ring-1 dark:ring-white/10">
                   <div className="relative aspect-[9/16] max-h-64 w-full overflow-hidden bg-teal-900">
                     {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img src={v.poster} alt="" loading="lazy" className="h-full w-full object-cover" />
+                    <img src={asset(v.poster)} alt="" loading="lazy" className="h-full w-full object-cover" />
                     <span className="absolute inset-0 grid place-items-center bg-black/10 transition group-hover:bg-black/20"><span className="grid h-12 w-12 place-items-center rounded-full bg-white/90 text-teal-800"><Play size={22} fill="currentColor" /></span></span>
                     {v.captions.length > 0 && <span className="absolute end-2 top-2 inline-flex items-center gap-1 rounded-md bg-black/60 px-1.5 py-0.5 text-xs font-bold text-white"><Captions size={12} /> CC</span>}
                   </div>

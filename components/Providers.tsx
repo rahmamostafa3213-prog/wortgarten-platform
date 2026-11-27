@@ -1,5 +1,6 @@
 "use client";
 import { createContext, useCallback, useContext, useEffect, useState } from "react";
+import { BASE } from "@/lib/base";
 import { DICTS, LANGS, type Lang } from "@/lib/i18n";
 
 type Ctx = { lang: Lang; setLang: (l: Lang) => void; t: (k: string) => string; dark: boolean; toggleDark: () => void };
@@ -23,7 +24,7 @@ export default function Providers({ children }: { children: React.ReactNode }) {
     // eslint-disable-next-line react-hooks/set-state-in-effect
     setLangState(q && DICTS[q] ? q : DICTS[l] ? l : "ar");
     setDark(qd ? qd === "1" : d ? d === "1" : matchMedia("(prefers-color-scheme: dark)").matches);
-    if ("serviceWorker" in navigator && location.protocol === "https:") navigator.serviceWorker.register("/sw.js").catch(() => {});
+    if ("serviceWorker" in navigator && location.protocol === "https:") navigator.serviceWorker.register(`${BASE}/sw.js`).catch(() => {});
   }, []);
 
   useEffect(() => {
